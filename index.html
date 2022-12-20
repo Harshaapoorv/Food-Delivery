@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href = "CSS/defaultproject.css">
+        <link rel = "stylesheet" href = "CSS/index.css">
+
+        <meta  name = "viewport" content = "width=device-width, intial-scale = 1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        
+        
+    </head>
+    <body>
+
+
+        <!--           Landing Page            -->
+
+        <main class = "landing-page">
+
+            <!--        Header       -->
+
+            <header class = "header">
+                <h1 class = "main-title">JTGeats</h1>
+                <nav class = "direction">
+                    <ul id = "list-items">
+                        <li><a href = "">Home</a></li>
+                        <li><a href = "">About</a></li>
+                        <li><a href = "">Menu</a></li>
+                        <li><a href = "">Blog</a></li>
+                        <li><a href = "">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class = "nav-icons">
+                    <img class = "search-icon" src = "Images/search.svg">
+                    <div class = "full-cart">
+                        <img onclick="openCart()" class = "cart-image" src = "Images/Card.svg">
+                        <img src = "Images/Cart/Ellipse 2.png" class = "ellipseordot"/>
+                    </div>
+                </div>
+                <img src = "Images/bars-solid.svg" class = "mobile-menu" onclick = "functionname()"/>
+            </header>
+
+            <!--         Landing Section       -->
+
+            <div class = "landing-section">
+                <div class = "hero-display">
+                    <h2 id = "display-with-text">Authentic Home<br>food in India</h2>
+                    <p id = "small-text">JTGeats is a courier service in which authentic home<br>cook food is delivered to a customer.</p>
+                    <section id = "input">
+                        <input id = "search-input" type = "text" placeholder = "Search food you love">
+                        <button id = "search-button" value = "Search">Search</button>
+                    </section>
+                </div>
+
+                <!--     Charachter           -->
+                <div class = "charachter">
+                    <img id = "charachter" src = "Images/Charachter/cuate.svg">
+                </div>
+            </div>
+        </main>
+
+
+        <!--           Food Gallery            -->
+
+
+        <div class = "food-gallery">
+            <h2 id = "kitchen-title">Home Kitchen</h2>
+
+            <!--       Kitchen Grid            -->
+
+            <div class="grid">
+
+                <!--   Cards    -->
+                <div class="card">
+                    <img src="Images/Kitchen Section/unsplash_MqT0asuoIcU.png"/>
+                    <span class = "discount">50%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/2.png"/>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/3.png"/>
+                    <span class = "discount">20%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/4.png"/>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/5.png"/>
+                    <span class = "discount">50%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/6.png"/>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/7.png"/>
+                    <span class = "discount">20%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/8.png"/>
+                    <span class = "discount">50%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/9.png"/>
+                    <span class = "discount">50%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/2.png"/>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/3.png"/>
+                    <span class = "discount">20%</span>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/Kitchen Section/4.png"/>
+                    <div class="card-content">
+                        <div class="line1">
+                            <p>Home Made Pizza</p>
+                            <p>₹190</p>
+                        </div>
+                        <div class="line2">
+                            <div class="line2-left">
+                                <div class="rating">
+                                    <img src="Images/star.png"/>
+                                    <p>4.3</p>
+                                </div>
+                                <div class="time">
+                                    <p>56-59 min</p>
+                                </div>
+                            </div>
+                            <img src="Images/add-to-cart.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--           Corousel                -->
+
+
+        <div class = "carousel">
+            <h2>Popular Items</h2>
+
+            <!--       Sliding cards           -->
+            <div class = "sliding-cards">
+
+                <!--   Button To Operate       -->
+
+                <button class="left">
+                    <img class="filled" src="Images/filled.svg">
+                    <img class="normal" src="Images/left.svg">
+                </button>
+
+                <!--   Main Slider             -->
+
+                <div class = "owl-carousel">
+                    <div class = "item">
+                        <img src="Images/Kitchen Section/9.png"/>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/7.png"/>
+                        <span class = "discount">20%</span>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/6.png"/>
+                        <span class = "discount">50%</span>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/5.png"/>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/4.png"/>
+                        <span class = "discount">20%</span>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/8.png"/>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time"  style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/2.png"/>
+                        <span class = "discount">10%</span>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 110px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "sliding item">
+                        <img src="Images/Kitchen Section/3.png"/>
+                        <div class="card-content">
+                            <div class="line1">
+                                <p>Home Made Pizza</p>
+                                <p>₹190</p>
+                            </div>
+                            <div class="line2">
+                                <div class="line2-left">
+                                    <div class="rating">
+                                        <img src="Images/star.png"/>
+                                        <p>4.3</p>
+                                    </div>
+                                    <div class="time" style = "width : 105px; border-radius : 5px;">
+                                        <p>56-59 min</p>
+                                    </div>
+                                </div>
+                                <img style = "width : 20px; height : 20px;" src="Images/add-to-cart.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Right Button             -->
+
+                <button class="right">
+                    <img class="filled" src="Images/filled.svg">
+                    <img class="normal" src="Images/left.svg">
+                </button>
+            </div>
+
+            <!--      Request a Dish Modal Button      -->
+		    <center><button type = "button" value = "Request a Dish" id = "requestdish" onclick = "openRequest()">Request a dish</button></center>
+        </div>
+
+        <!--           Video Section           -->
+
+
+        <div class="service">
+            <h2>We are providing best<br>home cooked food delivery service.</h2>
+            <p>Away from home and craving the tasty homemade recipes?<br>Choose from a selection of our delicious home cooked dishes</p>
+            
+            <!--       Video          -->
+            <div class="video-container">
+                <video id="video1" onclick="playPause()">
+                    <source src="Video/Cooking - 11657.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                <img src="Images/Arrow.png" id="playBtn" onclick="playPause()">
+            </div>
+        </div>
+
+
+        <!--           Modals                  -->
+
+        <!--           Cart-Modal              -->
+
+        <div class="modal" id="cart-modal">
+            <div class="cart-content">
+                <img src="Images/akar-icons_shopping-bag.svg">
+                <h1>Cart is empty</h1>
+                <p>Add some items to the cart to checkout</p>
+                <button onclick="closeCart()">Back to Menu</button>
+            </div>
+        </div>
+
+
+        <!--           Dish-Modal              -->
+
+
+        <div id="request-modal" class="modal">
+            <div class="request-content">
+                <h1>Request a Dish</h1>
+                <div class="form">
+                    <div class="name">
+                        <label>Name*</label>
+                        <input class="name-field" type="text" placeholder="Enter name of the dish">
+                    </div>
+                    <div class="url">
+                        <label>Upload an Image</label>
+                        <input class="url-field" type="text" placeholder="Paste a URL">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="req-cancel" class="cancel" onclick="closeRequest()">Cancel</button>
+                    <button id="req-submit" class="submit" onclick="closeRequest()">Submit Request</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--           Contact-Form            -->
+
+
+        <div class="contact-container">
+            <div class="contact-box">
+                <p class="title">Do you have a question<br>or want to become a seller?</p>
+                <p class="subtitle">Fill this form and our manager will contact you next 48 hours.</p>
+                <div class="contact-form">
+                    <div class="line1">
+                        <input type="text" class="name" placeholder="Your Name"/>
+                        <input type="email" class="email" placeholder="Your Email"/>
+                    </div>
+                    <textarea class="message" placeholder="Your Message"></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+            <img src="Images/Delivery/Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.svg"/>
+        </div>
+
+        <!--           Footer                  -->
+
+
+        <footer class="footer-container">
+            <div class="footer">
+                <h1 class="logo">JTGeats</h1>
+                <nav>
+                    <ul id="footerList">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-icons">
+                    <img class="nav-search" src="Images/facebook.svg"/>
+                    <img onclick="openCart()" class="nav-cart" src="Images/insta.svg" onclick="fun()"/>
+                </div>
+            </div>
+            <hr>
+            <p> </p>
+        </footer>
+    </body>
+    <script src = "JS/index.js"></script>
+</html>
