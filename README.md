@@ -35,7 +35,7 @@ https://harshaapoorv.github.io/Food-Delivery/
 <img width="1435" height="856" alt="FoodDeliveryWeb" src="https://github.com/user-attachments/assets/a4274a24-4d5e-424b-9bc3-ac79ce3d77a0" />
 
 ### Mobile
-<img width="1080" height="2235" alt="FoodDeliveryMobile" src="https://github.com/user-attachments/assets/e93d69d3-7ed9-4fa8-8df4-e7a5652e2b13" />
+<img width="440" height="381" alt="FoodDeliveryMobile" src="https://github.com/user-attachments/assets/e93d69d3-7ed9-4fa8-8df4-e7a5652e2b13" />
 
 
 ---
